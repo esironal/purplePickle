@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>MySQL file upload example</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="http://www.favicongenerator.com/favicon2/eggplant-large-20141231-favicon.ico" >
+</head>
+<body>
+    <!--<form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="uploaded_file"><br>
+        <input type="submit" value="Upload file">
+    </form>-->
+    <form method="post" enctype="multipart/form-data" action = "upload.php">
+	<table width="350" border="0" cellpadding="1" cellspacing="1" class="box">
+	<tr> 
+	<td width="246">
+	<input type="hidden" name="MAX_FILE_SIZE" value="2000000">
+	<input name="userfile" type="file" id="userfile"> 
+	</td>
+	<td width="80"><input name="upload" type="submit" class="box" id="upload" value=" Upload "></td>
+	</tr>
+	</table>
+	</form>
+    <p>
+        <a href="list_files.php">See all files</a>
+    </p>
+</body>
+</html>

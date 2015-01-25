@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="shortcut icon" href="http://www.favicongenerator.com/favicon2/eggplant-large-20141231-favicon.ico" >
+	<title>Purple Pickle</title>
+	<!--"Comic Sans MS", cursive, sans-serif;}-->
+	<style>
+	body {background-color: #F3C1FF;}
+	div.main {font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;font-size: 15pt;}
+	h1 {color:purple;text-align:center;}
+	#registerDIV {visibility: hidden;}
+	</style>
+</head>
+	<body>
+	<div class = "main">
+		<h1><img src = "eggplant-large.png" width="25px">The Purple Pickle<img src = "eggplant-large.png" width="25px"></h1>
+		The Purple Pickle stores files that you can upload and download once you have an account. Please login to start.
+		<form name = "login" method = "post" action = "checklogin.php">
+			Username: <input type = "text" name = "username" id="username">
+			<br>
+			Password: <input type = "password" name = "pw" id = "pw">
+			<br>
+			<input type = "submit" name = "submission" value = "Login!">
+		</form>
+		<br>
+		If you don't have an account, please register by clicking <strong onclick = "regis();">here</strong>.
+		<div id = "registerDIV">
+		<form name = "register" method = "post" action = "addmember.php">
+			Username: <input type = "text" name = "username" id="username2">
+			<br>
+			Password: <input type = "password" name = "pw" id = "pw2">
+			<br>
+			<input type = "submit" name = "submission" value = "Register!">
+		</form>
+		</div>
+	</div>
+	<script>
+		function regis() {
+			document.getElementById("registerDIV").style.visibility = "visible";
+		}
+	</script>
+	</body>
+</html>
+</html>
